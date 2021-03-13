@@ -1,17 +1,22 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
-    - ArrowRenderer
+    - ArrowPointerRenderer
     - ClosePopup
     - FaceCamera
     - FlyCamera
     - ImageVisibility
+    - LineRendererScript
     - ObjectColor
     - OpenPopup
     - RendererVisibility
+    - SkipImageVisibility
+    - SkipRendererVisibility
+    - SkipTextVisibility
     - StateController
     - StatusButton
     - TextVisibility
+    - ToggleSkipLayer
     - ToggleStatusMode
     - ToggleVersioning
     Unity.Rider.Editor.dll:
@@ -58,47 +63,57 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11248}
+      Script: {instanceID: 11254}
     - Class: 114
-      Script: {instanceID: 11252}
+      Script: {instanceID: 11258}
     - Class: 114
-      Script: {instanceID: 11352}
+      Script: {instanceID: 11360}
     - Class: 114
-      Script: {instanceID: 11398}
+      Script: {instanceID: 11390}
     - Class: 114
-      Script: {instanceID: 11412}
+      Script: {instanceID: 11408}
     - Class: 114
-      Script: {instanceID: 11452}
+      Script: {instanceID: 11422}
     - Class: 114
-      Script: {instanceID: 11550}
+      Script: {instanceID: 11462}
     - Class: 114
-      Script: {instanceID: 11730}
+      Script: {instanceID: 11560}
     - Class: 114
-      Script: {instanceID: 11844}
+      Script: {instanceID: 11654}
     - Class: 114
-      Script: {instanceID: 12070}
+      Script: {instanceID: 11742}
     - Class: 114
-      Script: {instanceID: 12116}
+      Script: {instanceID: 11856}
     - Class: 114
-      Script: {instanceID: 12118}
+      Script: {instanceID: 12082}
     - Class: 114
-      Script: {instanceID: 12176}
+      Script: {instanceID: 12112}
     - Class: 114
-      Script: {instanceID: 12236}
+      Script: {instanceID: 12130}
     - Class: 114
-      Script: {instanceID: 12258}
+      Script: {instanceID: 12132}
     - Class: 114
-      Script: {instanceID: 12284}
+      Script: {instanceID: 12190}
     - Class: 114
-      Script: {instanceID: 12506}
+      Script: {instanceID: 12250}
     - Class: 114
-      Script: {instanceID: 12698}
+      Script: {instanceID: 12272}
     - Class: 114
-      Script: {instanceID: 12724}
+      Script: {instanceID: 12298}
     - Class: 114
-      Script: {instanceID: 13074}
+      Script: {instanceID: 12354}
     - Class: 114
-      Script: {instanceID: 13142}
+      Script: {instanceID: 12502}
+    - Class: 114
+      Script: {instanceID: 12524}
+    - Class: 114
+      Script: {instanceID: 12740}
+    - Class: 114
+      Script: {instanceID: 12756}
+    - Class: 114
+      Script: {instanceID: 13092}
+    - Class: 114
+      Script: {instanceID: 13160}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 120
@@ -158,6 +173,12 @@ ScriptsOnlyBuild:
     className: TMP_ScrollbarEventHandler
   - hash:
       serializedVersion: 2
+      Hash: 72dcb5543b33d01e1f413245c55a51ae
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SetPosition
+  - hash:
+      serializedVersion: 2
       Hash: 0883ab57fe90b38a73990621985d3a40
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -174,6 +195,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: GroupTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 72dcb5543b33d01e1f413245c55a51ae
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ArrowPointerRenderer
   - hash:
       serializedVersion: 2
       Hash: a5781dc71a671b1ad2b38de19f24b71f
@@ -278,6 +305,12 @@ ScriptsOnlyBuild:
     className: AspectRatioFitter
   - hash:
       serializedVersion: 2
+      Hash: fd7962c5cdecf0f3cb2753e6b48b0b44
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SkipRendererVisibility
+  - hash:
+      serializedVersion: 2
       Hash: ef5c43f921427d03730f6ea4c848f07d
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -369,6 +402,12 @@ ScriptsOnlyBuild:
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ToggleSkipLayer
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_SpriteAnimator
@@ -428,6 +467,12 @@ ScriptsOnlyBuild:
     className: VerticalLayoutGroup
   - hash:
       serializedVersion: 2
+      Hash: fd7962c5cdecf0f3cb2753e6b48b0b44
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SkipImageVisibility
+  - hash:
+      serializedVersion: 2
       Hash: 783f593b9380cf72d0f7ebfd4a0d4bcd
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -470,7 +515,13 @@ ScriptsOnlyBuild:
     className: Physics2DRaycaster
   - hash:
       serializedVersion: 2
-      Hash: 1bea92b87692d5fd79de534967017252
+      Hash: 72dcb5543b33d01e1f413245c55a51ae
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: LineRendererScript
+  - hash:
+      serializedVersion: 2
+      Hash: ef3606cb62843dec987f6a64ac9562c4
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: StateController
@@ -494,12 +545,6 @@ ScriptsOnlyBuild:
     className: CameraController
   - hash:
       serializedVersion: 2
-      Hash: ff50986d831b98bc1f68e7972fbe6d57
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: ArrowRenderer
-  - hash:
-      serializedVersion: 2
       Hash: f336e086360abe49a3323e5f1583c35a
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -510,6 +555,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: GraphicRaycaster
+  - hash:
+      serializedVersion: 2
+      Hash: fd7962c5cdecf0f3cb2753e6b48b0b44
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SkipTextVisibility
   - hash:
       serializedVersion: 2
       Hash: 8e6ceabfd38a184413d69b7db56c89cc

@@ -13,8 +13,6 @@ public class ObjectColor : MonoBehaviour
   public Color normalObjectColor;
 
   public Color statusObjectColor;
-  public Material normalMaterial;
-  public Material statusMaterial;
 
 
 
@@ -26,13 +24,10 @@ public class ObjectColor : MonoBehaviour
     void Update()
     {
         if (StateController.Instance.StatusMode) {
-          objectRenderer.material = statusMaterial;
           objectRenderer.material.SetColor("_Color", statusObjectColor);
         }
         else {
-          objectRenderer.material = normalMaterial;
           objectRenderer.material.SetColor("_Color", normalObjectColor);
-
         }
     }
 
