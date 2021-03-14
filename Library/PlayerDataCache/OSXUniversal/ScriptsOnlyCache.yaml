@@ -10,6 +10,8 @@ ScriptsOnlyBuild:
     - ObjectColor
     - OpenPopup
     - RendererVisibility
+    - SetPosition
+    - ShowStatusButton
     - SkipImageVisibility
     - SkipRendererVisibility
     - SkipTextVisibility
@@ -21,6 +23,13 @@ ScriptsOnlyBuild:
     - ToggleVersioning
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
+    Unity.TextMeshPro.dll:
+    - TMPro.TMP_ColorGradient
+    - TMPro.TMP_FontAsset
+    - TMPro.TMP_Settings
+    - TMPro.TMP_SpriteAsset
+    - TMPro.TMP_StyleSheet
+    - TMPro.TextMeshProUGUI
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -32,7 +41,6 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
-    - UnityEngine.UI.RawImage
     - UnityEngine.UI.Text
   sceneClasses:
     Assets/Scenes/SampleScene.unity:
@@ -54,6 +62,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
+    - Class: 49
+      Script: {instanceID: 0}
     - Class: 64
       Script: {instanceID: 0}
     - Class: 81
@@ -66,6 +76,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 11254}
     - Class: 114
       Script: {instanceID: 11258}
+    - Class: 114
+      Script: {instanceID: 11358}
     - Class: 114
       Script: {instanceID: 11360}
     - Class: 114
@@ -85,6 +97,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11856}
     - Class: 114
+      Script: {instanceID: 11882}
+    - Class: 114
       Script: {instanceID: 12082}
     - Class: 114
       Script: {instanceID: 12112}
@@ -97,23 +111,33 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12250}
     - Class: 114
-      Script: {instanceID: 12272}
-    - Class: 114
       Script: {instanceID: 12298}
     - Class: 114
       Script: {instanceID: 12354}
+    - Class: 114
+      Script: {instanceID: 12474}
+    - Class: 114
+      Script: {instanceID: 12488}
     - Class: 114
       Script: {instanceID: 12502}
     - Class: 114
       Script: {instanceID: 12524}
     - Class: 114
+      Script: {instanceID: 12676}
+    - Class: 114
       Script: {instanceID: 12740}
     - Class: 114
       Script: {instanceID: 12756}
     - Class: 114
+      Script: {instanceID: 12892}
+    - Class: 114
+      Script: {instanceID: 12996}
+    - Class: 114
       Script: {instanceID: 13092}
     - Class: 114
       Script: {instanceID: 13160}
+    - Class: 114
+      Script: {instanceID: 314098}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 120
@@ -173,13 +197,13 @@ ScriptsOnlyBuild:
     className: TMP_ScrollbarEventHandler
   - hash:
       serializedVersion: 2
-      Hash: 72dcb5543b33d01e1f413245c55a51ae
+      Hash: 9f46d343e49487f37d9581859585db5c
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: SetPosition
   - hash:
       serializedVersion: 2
-      Hash: 0883ab57fe90b38a73990621985d3a40
+      Hash: 12859f8bb3ba25a1f7254f88ddaece8b
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: FlyCamera
@@ -209,7 +233,7 @@ ScriptsOnlyBuild:
     className: ActivationTrack
   - hash:
       serializedVersion: 2
-      Hash: 487e311a3ff378527593859d315679f7
+      Hash: 2aac7bfa65b3e3cca6129ac0dbdb5c77
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: StatusButton
@@ -515,7 +539,7 @@ ScriptsOnlyBuild:
     className: Physics2DRaycaster
   - hash:
       serializedVersion: 2
-      Hash: 72dcb5543b33d01e1f413245c55a51ae
+      Hash: a42dc1124df11849532d98d7dd4e9383
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: LineRendererScript
@@ -681,6 +705,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: RendererVisibility
+  - hash:
+      serializedVersion: 2
+      Hash: af9a923558704d63bd31721281570c57
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ShowStatusButton
   platform: 2
   scenePathNames:
   - Assets/Scenes/SampleScene.unity

@@ -2,10 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
+
 
 public class StatusButton : MonoBehaviour
 {
-  public Text ValueText;
+  public TextMeshProUGUI ValueText;
+
+    void Start () {
+
+        ValueText = GetComponent<TextMeshProUGUI> ();
+    }
     void Update()
     {
       if (StateController.Instance.StatusMode) {

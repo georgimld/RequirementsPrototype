@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
+
 
 
 public class SkipTextVisibility : MonoBehaviour
@@ -11,15 +13,15 @@ public class SkipTextVisibility : MonoBehaviour
 
     void Start()
     {
-      gameObject.GetComponent<Text>().enabled = isVisibleInSkipLayer;
+      gameObject.GetComponent<TextMeshProUGUI>().enabled = isVisibleInSkipLayer;
     }
     void Update()
     {
       if (StateController.Instance.SkipLayerMode) {
-        gameObject.GetComponent<Text>().enabled = isVisibleInSkipLayer;
+        gameObject.GetComponent<TextMeshProUGUI>().enabled = isVisibleInSkipLayer;
       }
       else {
-        gameObject.GetComponent<Text>().enabled = !isVisibleInSkipLayer;
+        gameObject.GetComponent<TextMeshProUGUI>().enabled = !isVisibleInSkipLayer;
       }
 
     }

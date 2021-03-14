@@ -25,8 +25,9 @@ public class SetPosition : MonoBehaviour
   void setTextPosition () {
      RaycastHit hit;
     if (Physics.Raycast(origin.position,  destination.position - origin.position, out hit)){
-      iconGameObject.transform.position = hit.point - (destination.position - origin.position)/2;
-          Debug.Log(iconGameObject.transform.position);
+      Vector3 newPosition = hit.point - (destination.position - origin.position)/2;
+      newPosition.y+=2;
+      iconGameObject.transform.position = newPosition;
 
     }
   }

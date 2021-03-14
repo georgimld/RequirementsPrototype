@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
+
 
 
 public class TextVisibility : MonoBehaviour
@@ -11,15 +13,15 @@ public class TextVisibility : MonoBehaviour
 
     void Start()
     {
-      gameObject.GetComponent<Text>().enabled = isVisibleInVersioning;
+      gameObject.GetComponent<TextMeshProUGUI>().enabled = isVisibleInVersioning;
     }
     void Update()
     {
       if (StateController.Instance.VersioningMode) {
-        gameObject.GetComponent<Text>().enabled = isVisibleInVersioning;
+        gameObject.GetComponent<TextMeshProUGUI>().enabled = isVisibleInVersioning;
       }
       else {
-        gameObject.GetComponent<Text>().enabled = !isVisibleInVersioning;
+        gameObject.GetComponent<TextMeshProUGUI>().enabled = !isVisibleInVersioning;
       }
 
     }
