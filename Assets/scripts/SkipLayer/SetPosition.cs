@@ -26,7 +26,8 @@ public class SetPosition : MonoBehaviour
      RaycastHit hit;
     if (Physics.Raycast(origin.position,  destination.position - origin.position, out hit)){
       Vector3 newPosition = hit.point - (destination.position - origin.position)/2;
-      newPosition.y+=2;
+      newPosition.y+=4;
+      newPosition.x+=2;
       iconGameObject.transform.position = newPosition;
 
     }

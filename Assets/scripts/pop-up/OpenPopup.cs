@@ -1,15 +1,34 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
+
 
 public class OpenPopup : MonoBehaviour
 {
-  public GameObject popup;
+  public GameObject windowsPopup;
+  public GameObject macPopup;
+   OperatingSystem os;
+   PlatformID     pid; 
+
 
   void Start(){
-    popup.SetActive(false);
+    os = Environment.OSVersion;
+    pid = os.Platform;
+    windowsPopup.SetActive(false);
+    macPopup.SetActive(false);
+
   }
   void OnMouseDown() {
-    popup.SetActive(true);
+    switch (pid) 
+            {
+            case PlatformID.Unix:
+            case PlatformID.MacOSX:
+                macPopup.SetActive(true);
+                break;
+            default:
+                windowsPopup.SetActive(true);
+                break;
+            }
   }
 }
